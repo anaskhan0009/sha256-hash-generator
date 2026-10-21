@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free SHA-256 Hash Generator Online — SHA-256 Checksum for Text & Files | Dinal Studios</title>
+<meta name="description" content="Free SHA-256 hash generator: instant SHA-256 checksums for text and files in your browser, with a hash checker and why SHA-256 matters.">
+<meta name="keywords" content="sha256 hash generator, sha256 generator online, sha-256 checksum, generate sha256, sha256 file hash, verify download checksum, bitcoin sha256, hash checker, online hash tool">
+<meta name="author" content="Dinal Studios">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://anaskhan0009.github.io/sha256-hash-generator/">
+<meta property="og:title" content="Free SHA-256 Hash Generator Online — SHA-256 Checksum for Text & Files | Dinal Studios">
+<meta property="og:description" content="Free SHA-256 hash generator: instant SHA-256 checksums for text and files in your browser, with a hash checker and why SHA-256 matters.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://anaskhan0009.github.io/sha256-hash-generator/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free SHA-256 Hash Generator Online — SHA-256 Checksum for Text & Files | Dinal Studios">
+<meta name="twitter:description" content="Free SHA-256 hash generator: instant SHA-256 checksums for text and files in your browser, with a hash checker and why SHA-256 matters.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SHA-256 Hash Generator \u2014 Checksum Online",
+  "url": "https://anaskhan0009.github.io/sha256-hash-generator/",
+  "applicationCategory": "SecurityApplication",
+  "operatingSystem": "Any (Web Browser)",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Dinal Studios",
+    "url": "https://github.com/anaskhan0009"
+  },
+  "description": "Free online SHA-256 hash generator for text and files with a hash comparison checker and a guide to why SHA-256 secures Bitcoin, downloads and digital signatures."
+}
+</script>
+<style>
+  * { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+  body { margin: 0; background: #0a0f1a; color: #dbe4f3; }
+  header { background: radial-gradient(1000px 400px at 50% -80px, #14532d 0%, #0a0f1a 60%); padding: 46px 16px 30px; text-align: center; border-bottom: 1px solid #1d2b45; }
+  header h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: .5px; }
+  header h1 span { color: #22c55e; }
+  header p { margin: 0; color: #93a5c4; font-size: 15px; }
+  .mono { font-family: 'Consolas', 'Courier New', monospace; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 22px 14px 46px; }
+  .card { background: #111a2c; border: 1px solid #1f2c47; border-radius: 14px; padding: 22px; margin-bottom: 20px; }
+  .card h2 { margin: 0 0 6px; font-size: 20px; color: #fff; }
+  .card h2 .tag { color: #22c55e; font-size: 13px; vertical-align: middle; }
+  .card .sub { color: #93a5c4; font-size: 13.5px; margin: 0 0 16px; }
+  textarea, input[type=text], input[type=password], select { width: 100%; padding: 12px; border-radius: 9px; border: 1px solid #2a3a5c; background: #0a0f1a; color: #fff; font-size: 15px; }
+  textarea { min-height: 90px; resize: vertical; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .btn { background: #22c55e; color: #06280f; border: none; padding: 11px 20px; border-radius: 9px; cursor: pointer; font-weight: 700; font-size: 14px; }
+  .btn:hover { background: #2fe673; }
+  .btn.dark { background: #1f2c47; color: #dbe4f3; }
+  .btn.dark:hover { background: #2a3c61; }
+  .out { background: #0a0f1a; border: 1px dashed #2a3a5c; border-radius: 9px; padding: 13px; font-size: 14px; word-break: break-all; min-height: 24px; }
+  .ok { color: #22c55e; font-weight: 800; }
+  .bad { color: #ef4444; font-weight: 800; }
+  .warn { color: #f59e0b; font-weight: 800; }
+  .terms { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 620px){ .terms { grid-template-columns: 1fr; } }
+  .term { background: #0a0f1a; border: 1px solid #1f2c47; border-radius: 10px; padding: 12px 14px; font-size: 13.5px; }
+  .term b { color: #fff; }
+  .term .cat { display: inline-block; font-size: 11px; font-weight: 700; color: #22c55e; border: 1px solid #14532d; border-radius: 12px; padding: 1px 8px; margin-left: 6px; vertical-align: middle; }
+  .rule { background: #2a1215; border: 1px solid #7f1d1d; color: #fecaca; border-radius: 10px; padding: 13px 15px; font-size: 14px; margin-top: 14px; }
+  .flagok { background: #0d2818; border: 1px solid #14532d; color: #bbf7d0; border-radius: 10px; padding: 13px 15px; font-size: 14px; margin-top: 12px; }
+  .flagwarn { background: #2b2108; border: 1px solid #92600a; color: #fde68a; border-radius: 10px; padding: 13px 15px; font-size: 14px; margin-top: 12px; }
+  .privacy { text-align: center; color: #64769a; font-size: 12.5px; margin-top: 4px; }
+  footer { text-align: center; color: #55688c; font-size: 12px; padding: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  td, th { padding: 8px 10px; border-bottom: 1px solid #1f2c47; text-align: left; vertical-align: top; }
+  th { color: #93a5c4; font-weight: 600; }
+  .chip { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12.5px; font-weight: 800; margin: 2px 4px 2px 0; }
+  .chip.pass { background: #14532d; color: #86efac; }
+  .chip.fail { background: #7f1d1d; color: #fecaca; }
+  .chip.none { background: #713f12; color: #fde68a; }
+  .hop { border-left: 3px solid #22c55e; background: #0a0f1a; border-radius: 0 10px 10px 0; padding: 11px 14px; margin-bottom: 10px; font-size: 13.5px; }
+  .hop b { color: #fff; }
+  .hop .when { color: #93a5c4; font-size: 12.5px; }
+  .links a { display: inline-block; margin: 4px 6px 4px 0; padding: 8px 14px; background: #0a0f1a; border: 1px solid #2a3a5c; border-radius: 20px; color: #a9c6f5; text-decoration: none; font-size: 13.5px; }
+  .links a:hover { border-color: #22c55e; color: #fff; }
+  .opt { display: block; width: 100%; text-align: left; background: #0a0f1a; border: 1px solid #2a3a5c; color: #dbe4f3; padding: 12px 14px; border-radius: 9px; cursor: pointer; font-size: 14.5px; margin-bottom: 9px; }
+  .opt:hover { border-color: #22c55e; }
+  .opt.right { border-color: #22c55e; background: #0d2818; }
+  .opt.wrong { border-color: #ef4444; background: #2a1215; }
+  .opt:disabled { cursor: default; opacity: .92; }
+  .bar { height: 10px; background: #0a0f1a; border: 1px solid #2a3a5c; border-radius: 6px; overflow: hidden; }
+  .bar > div { height: 100%; background: #22c55e; width: 0%; transition: width .3s; }
+  .catbtn { background: #1f2c47; color: #dbe4f3; border: 1px solid #2a3a5c; padding: 8px 14px; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; }
+  .catbtn.on { background: #22c55e; color: #06280f; border-color: #22c55e; }
+
+</style>
+</head>
+
+<body>
+<header>
+  <h1><span>#</span> SHA-256 Hash Generator</h1>
+  <p>The world's most trusted fingerprint — SHA-256 checksums for text &amp; files, computed privately in your browser — by Dinal Studios</p>
+</header>
+<div class="wrap">
+
+  <div class="card">
+    <h2>🧮 SHA-256 Hash of Text <span class="tag">INSTANT</span></h2>
+    <p class="sub">Type or paste any text. The SHA-256 hash updates as you type, using your browser's built-in Web Crypto engine — the text never leaves this page.</p>
+    <textarea id="txtIn" class="mono" placeholder="Type text to hash… e.g. hello"></textarea>
+    <div class="row" style="margin-top:10px">
+      <label style="font-size:13.5px;color:#c6d2e8"><input type="checkbox" id="upper"> UPPERCASE output</label>
+    </div>
+    <div class="out mono" id="hashOut" style="margin-top:12px">Your SHA-256 hash will appear here…</div>
+    <div class="row" style="margin-top:12px">
+      <button class="btn" onclick="copyOut('hashOut')">Copy Hash</button>
+      <span style="font-size:13px;color:#93a5c4">SHA-256 · 64 hex characters · 256 bits</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📁 SHA-256 Checksum of a File <span class="tag">VERIFY DOWNLOADS</span></h2>
+    <p class="sub">Select a file to compute its SHA-256 fingerprint locally. This is exactly how you verify a download: compare the result with the checksum the publisher provides on their official page. A match proves the file is bit-for-bit genuine.</p>
+    <input type="file" id="fileIn">
+    <div class="out mono" id="fileOut" style="margin-top:12px">No file selected yet.</div>
+    <div class="row" style="margin-top:12px">
+      <button class="btn dark" onclick="copyOut('fileOut')">Copy File Hash</button>
+      <span id="fileInfo" style="font-size:13px;color:#93a5c4"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>✅ SHA-256 Checker — Do They Match?</h2>
+    <p class="sub">Paste the hash you computed and the official published checksum. The checker compares them character by character — even one different character means different data.</p>
+    <input type="text" id="cmpA" class="mono" placeholder="Hash 1 — the one you computed" style="margin-bottom:10px">
+    <input type="text" id="cmpB" class="mono" placeholder="Hash 2 — the official published checksum">
+    <div class="row" style="margin-top:12px">
+      <button class="btn" onclick="compareHashes()">Compare Hashes</button>
+      <span id="cmpResult" style="font-size:15px"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🎓 Why SHA-256 Matters — The Fingerprint the Internet Trusts</h2>
+    <div class="terms">
+      <div class="term"><b>One-way, always.</b> SHA-256 (from the SHA-2 family, designed by the NSA and published in 2001) turns any input — a letter or a 4 GB movie — into a fixed 256-bit fingerprint. The same input always gives the same hash, and no one can reverse it back into the original data.</div>
+      <div class="term"><b>The avalanche effect.</b> Change a single comma in a document and roughly half of the 64 hex characters change. There is no "close enough" — a hash either matches exactly or the data is different. That harshness is exactly what makes it useful.</div>
+      <div class="term"><b>Collision resistance.</b> Unlike MD5 and SHA-1, nobody has ever found two different inputs producing the same SHA-256 hash. With 2²⁵⁶ possible outputs, brute-forcing a collision is beyond the reach of all the computers on Earth combined.</div>
+      <div class="term"><b>Fast by design — a double edge.</b> SHA-256 is quick, which is perfect for integrity checks. But never store passwords with raw SHA-256: attackers can guess billions per second. Passwords need slow, salted algorithms (bcrypt, Argon2) — speed is a bug there, not a feature.</div>
+    </div>
+    <table style="margin-top:14px">
+      <tr><th>Where SHA-256 protects you</th><th>How</th></tr>
+      <tr><td>Bitcoin &amp; blockchains</td><td>Miners hash block headers with double SHA-256 (proof-of-work); wallet addresses and transaction IDs are hashes — change one byte and the chain rejects it.</td></tr>
+      <tr><td>Software downloads</td><td>Publishers post SHA-256 checksums so you can prove your installer is exactly the file they released — not a tampered copy.</td></tr>
+      <tr><td>Digital signatures</td><td>Documents are signed by signing their SHA-256 hash — any edit after signing invalidates the signature.</td></tr>
+      <tr><td>TLS / HTTPS certificates</td><td>Certificate fingerprints and signature algorithms rely on SHA-256 to bind identities to websites.</td></tr>
+      <tr><td>Git &amp; integrity monitoring</td><td>Version control and file-integrity tools hash contents to detect any change instantly.</td></tr>
+    </table>
+    <div class="flagok">✅ <b>Rule of thumb:</b> verifying something you downloaded? The publisher's checksum should be SHA-256 (or SHA-512). If a site still offers only MD5 for a security download, that is a warning sign about the publisher — not a reason to trust MD5.</div>
+    <p class="privacy">🔒 100% private: all hashing happens on your device with the Web Crypto API. No text or file is ever uploaded.</p>
+  </div>
+  <div class="card">
+    <h2>🧰 More Free Tools by Dinal Studios</h2>
+    <p class="sub">Free cyber security tools that run 100% in your browser — no sign-up, no uploads, no tracking.</p>
+    <div class="links"><a href="https://anaskhan0009.github.io/hash-generator-checker/">SHA-1 / SHA-256 / SHA-512 Hash Generator &amp; Checker</a><a href="https://anaskhan0009.github.io/md5-hash-generator/">MD5 Hash Generator — and Why MD5 Is Broken</a><a href="https://anaskhan0009.github.io/secure-message-encryptor/">Secure Message Encryptor (AES-256)</a><a href="https://anaskhan0009.github.io/cyber-security-toolkit/">Complete Cyber Security Toolkit</a><a href="https://anaskhan0009.github.io/password-generator-tool/">Strong Password &amp; Passphrase Generator</a><a href="https://anaskhan0009.github.io/cyber-security-glossary/">Cyber Security Glossary — 80+ Terms Explained</a></div>
+  </div>
+
+  <footer>Built by Dinal Studios · Free online SHA-256 hash generator &amp; checksum calculator · Educational and defensive use only</footer>
+</div>
+
+<script>
+var enc4 = new TextEncoder();
+function bufToHex4(buf){
+  var bytes = new Uint8Array(buf), hex = "";
+  for (var i = 0; i < bytes.length; i++) hex += bytes[i].toString(16).padStart(2, "0");
+  return hex;
+}
+function applyCase4(h){ return document.getElementById("upper").checked ? h.toUpperCase() : h; }
+async function digest256(data){
+  var d = await crypto.subtle.digest("SHA-256", data);
+  return applyCase4(bufToHex4(d));
+}
+async function hashText4(){
+  var t = document.getElementById("txtIn").value;
+  var out = document.getElementById("hashOut");
+  if (!t){ out.textContent = "Your SHA-256 hash will appear here…"; return; }
+  out.textContent = await digest256(enc4.encode(t));
+}
+async function hashFile4(){
+  var f = document.getElementById("fileIn").files[0];
+  var out = document.getElementById("fileOut");
+  if (!f){ out.textContent = "No file selected yet."; return; }
+  out.textContent = "Hashing… (large files may take a moment)";
+  var buf = await f.arrayBuffer();
+  out.textContent = await digest256(buf);
+  document.getElementById("fileInfo").textContent = f.name + " · " + (f.size / 1024).toFixed(1) + " KB · SHA-256";
+}
+function copyOut(id){
+  var t = document.getElementById(id).textContent;
+  if (t && navigator.clipboard) navigator.clipboard.writeText(t);
+}
+function compareHashes(){
+  var a = document.getElementById("cmpA").value.trim().toLowerCase().replace(/\s+/g, "");
+  var b = document.getElementById("cmpB").value.trim().toLowerCase().replace(/\s+/g, "");
+  var r = document.getElementById("cmpResult");
+  if (!a || !b){ r.innerHTML = '<span class="bad">Paste both hashes first.</span>'; return; }
+  if (!/^[0-9a-f]+$/.test(a) || !/^[0-9a-f]+$/.test(b)){ r.innerHTML = '<span class="bad">That doesn\'t look like a hex hash.</span>'; return; }
+  if (a.length !== b.length){ r.innerHTML = '<span class="bad">✗ NO MATCH — different lengths (' + a.length + " vs " + b.length + " characters).</span>"; return; }
+  if (a === b){ r.innerHTML = '<span class="ok">✓ MATCH — identical hashes. The data is bit-for-bit unchanged.</span>'; return; }
+  var diff = 0;
+  for (var i = 0; i < a.length; i++) if (a[i] !== b[i]) diff++;
+  r.innerHTML = '<span class="bad">✗ NO MATCH — ' + diff + " of " + a.length + " characters differ. Do not trust the file.</span>";
+}
+document.getElementById("txtIn").addEventListener("input", hashText4);
+document.getElementById("upper").addEventListener("change", function(){ hashText4(); hashFile4(); });
+document.getElementById("fileIn").addEventListener("change", hashFile4);
+</script>
+</body>
+</html>
